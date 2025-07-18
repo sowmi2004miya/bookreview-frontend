@@ -12,8 +12,13 @@
   background-color:black;
   border-radius:20px;
   border:2px solid black;
+  width:200px;
+  padding: auto;
   
 }
+ input{
+  display:inline-block;
+ }
 
 body{
   background-color: antiquewhite;
