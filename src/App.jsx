@@ -136,6 +136,7 @@ function App() {
           <li key={r._id} className="review-item">
             <strong>{r.title}</strong>
             <p><em>Author:</em> {r.author}</p>
+            <p><em>Review:</em>{r.review}</p>
             <p><em>Rating:</em> {r.rating}</p>
             <p><em>Reviewer:</em> {r.reviewer}</p>
             <button onClick={() => handleEdit(r)}>Edit</button>
