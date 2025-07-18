@@ -92,7 +92,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>📚 Book Review App</h1>
+      <h1>Book Review App</h1>
 
       <form onSubmit={handleSubmit} className="review-form">
         <input
@@ -114,7 +114,7 @@ function App() {
           type="number"
           value={form.rating}
           onChange={handleChange}
-          placeholder="Rating (1–5)"
+          placeholder="Rating (1-5)"
           min="1"
           max="5"
           required
