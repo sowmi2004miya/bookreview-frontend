@@ -111,6 +111,14 @@ function App() {
           placeholder="Author"
           required
         />
+
+        <input
+          name="review"
+          value={form.review}
+          onChange={handleChange}
+          placeholder="Review"
+          required
+        />
         <input
           name="rating"
           type="number"
