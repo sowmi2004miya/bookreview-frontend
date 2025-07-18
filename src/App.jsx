@@ -9,6 +9,7 @@ function App() {
   const [form, setForm] = useState({
     title: '',
     author: '',
+    review: '',
     rating: '',
     reviewer: ''
   });
@@ -52,7 +53,7 @@ function App() {
         setMessage(' Review added!');
       }
 
-      setForm({ title: '', author: '', rating: '', reviewer: '' });
+      setForm({ title: '', author: '',review: '', rating: '', reviewer: '' });
       setEditingId(null);
       fetchReviews();
       setTimeout(() => setMessage(''), 3000);
@@ -68,6 +69,7 @@ function App() {
     setForm({
       title: review.title,
       author: review.author,
+      review:review.review,
       rating: review.rating,
       reviewer: review.reviewer
     });
